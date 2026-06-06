@@ -2,7 +2,7 @@
 
 Piccola app desktop per accedere a ClasseViva con username e password, scegliere il quadrimestre e visualizzare le medie dei voti in una finestra grafica.
 
-> Progetto realizzato in stile **vibecoding**: iterazione rapida, refactor progressivi e verifica pratica dell'eseguibile finale.
+> Progetto *vibecoded*
 
 ## Funzionalità
 
