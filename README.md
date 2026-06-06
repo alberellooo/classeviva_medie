@@ -1,6 +1,6 @@
 # ClasseViva Voti
 
-Se vuoi usarlo subito, scarica `ClasseVivaVoti.exe` dalla root della repo e aprilo su Windows.
+**SE VUOI USARLO SUBITO, SCARICA L'.`exe` ED ESEGUILO**
 
 > Progetto *vibecoded*
 
