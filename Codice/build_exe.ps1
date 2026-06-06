@@ -1,0 +1,10 @@
+$ErrorActionPreference = "Stop"
+
+$python = Join-Path $PSScriptRoot "..\.venv\Scripts\python.exe"
+if (-not (Test-Path $python)) {
+    $python = "python"
+}
+
+& $python -m PyInstaller --noconfirm --clean $PSScriptRoot\ClasseVivaVoti.spec
+
+Copy-Item -Path (Join-Path $PSScriptRoot "..\dist\ClasseVivaVoti.exe") -Destination (Join-Path $PSScriptRoot "..\ClasseVivaVoti.exe") -Force

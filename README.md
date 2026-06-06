@@ -1,8 +1,10 @@
 # ClasseViva Voti
 
-Piccola app desktop per accedere a ClasseViva con username e password, scegliere il quadrimestre e visualizzare le medie dei voti in una finestra grafica.
+Se vuoi usarlo subito, scarica `ClasseVivaVoti.exe` dalla root della repo e aprilo su Windows.
 
 > Progetto *vibecoded*
+
+Piccola app desktop per accedere a ClasseViva con username e password, scegliere il quadrimestre e visualizzare le medie dei voti in una finestra grafica.
 
 ## Funzionalità
 
@@ -23,13 +25,13 @@ Piccola app desktop per accedere a ClasseViva con username e password, scegliere
 Da cartella progetto:
 
 ```powershell
-.\.venv\Scripts\python.exe files\main.py
+.\.venv\Scripts\python.exe Codice\main.py
 ```
 
 Se non usi il virtualenv già presente, installa prima le dipendenze:
 
 ```powershell
-pip install -r files\requirements.txt
+pip install -r Codice\requirements.txt
 ```
 
 ## Creazione dell'exe
@@ -37,34 +39,34 @@ pip install -r files\requirements.txt
 Il progetto include uno script di build:
 
 ```powershell
-.\build_exe.ps1
+.\Codice\build_exe.ps1
 ```
 
 L'eseguibile viene generato in:
 
 ```powershell
-dist\ClasseVivaVoti.exe
+ClasseVivaVoti.exe
 ```
 
 In alternativa puoi usare PyInstaller direttamente:
 
 ```powershell
-pyinstaller --noconfirm --clean ClasseVivaVoti.spec
+pyinstaller --noconfirm --clean Codice\ClasseVivaVoti.spec
 ```
 
 ## Struttura
 
-- `files/main.py` — entry point dell'app
-- `files/gui.py` — interfaccia grafica
-- `files/auth.py` — login ClasseViva
-- `files/voti.py` — recupero e calcolo medie
-- `files/display.py` — formattazione risultati
-- `build_exe.ps1` — script di compilazione
-- `ClasseVivaVoti.spec` — configurazione PyInstaller
+- `ClasseVivaVoti.exe` — eseguibile pronto all'uso
+- `Codice/main.py` — entry point dell'app
+- `Codice/gui.py` — interfaccia grafica
+- `Codice/auth.py` — login ClasseViva
+- `Codice/voti.py` — recupero e calcolo medie
+- `Codice/display.py` — formattazione risultati
+- `Codice/build_exe.ps1` — script di compilazione
+- `Codice/ClasseVivaVoti.spec` — configurazione PyInstaller
 
 ## Note
 
 - Le credenziali vengono inserite localmente nella finestra dell'app.
 - L'app dipende dai servizi ClasseViva: se il servizio non risponde, il login o il recupero voti possono fallire.
 - L'`.exe` può essere segnalato da alcuni antivirus perché generato con PyInstaller.
-
