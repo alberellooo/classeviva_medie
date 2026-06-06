@@ -1,10 +1,13 @@
 # ClasseViva Voti
 
-**SE VUOI USARLO SUBITO, SCARICA L'.`exe` ED ESEGUILO**
+> [!TIP]
+> **SE VUOI USARLO SUBITO, SCARICA L'.`exe` ED ESEGUILO**
 
-> Progetto *vibecoded*
+---
 
 Piccola app desktop per accedere a ClasseViva con username e password, scegliere il quadrimestre e visualizzare le medie dei voti in una finestra grafica.
+
+> Progetto *vibecoded*
 
 ## Funzionalità
 
